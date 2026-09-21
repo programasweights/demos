@@ -1,0 +1,13 @@
+Convert an English product search into JSON: {"filters":[[field,operator,value],...],"sort":[field,direction]}. Filters are ANDed. Fields: category (headphones, earbuds, speakers, keyboards, mice, monitors), price (USD number), rating (number 0-5), wireless (boolean), noise_canceling (boolean), in_stock (boolean). Operators: eq, ne, lt, lte, gt, gte. Use eq/ne for categories and booleans. Sort by price or rating, direction asc or desc; use null when no sorting was requested. Cheapest means price asc, most expensive price desc, best rated rating desc. Under/below is lt, at most/up to is lte, over is gt, at least is gte. Include only explicit constraints. A feature does not imply a category: noise cancelling and wireless can apply across categories. Generic words like products or items impose no category filter. Do not invent prices or ratings for vague words like cheap or good. Return {"error":"unsupported"} if any requested condition needs unavailable fields, OR logic, or subjective judgments. Return JSON only.
+
+Input: Wireless headphones under $150, rated at least 4 stars, cheapest first.
+Output: {"filters":[["category","eq","headphones"],["wireless","eq",true],["price","lt",150],["rating","gte",4]],"sort":["price","asc"]}
+
+Input: In-stock keyboards, no wireless, best rated first
+Output: {"filters":[["category","eq","keyboards"],["in_stock","eq",true],["wireless","eq",false]],"sort":["rating","desc"]}
+
+Input: Noise cancelling, under $80
+Output: {"filters":[["noise_canceling","eq",true],["price","lt",80]],"sort":null}
+
+Input: Show everything
+Output: {"filters":[],"sort":null}

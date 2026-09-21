@@ -1,0 +1,10 @@
+Translate an English recurring schedule into a standard five-field cron expression (minute hour day-of-month month day-of-week), using numbers and *, comma, hyphen, slash only. Output JSON {"cron":"expression"}. Weekdays are 1-5, weekends 0,6, Sunday 0. Every N minutes means */N * * * * for divisors of 60; every N hours means 0 */N * * * for divisors of 24. Daily without a time means midnight. Only recurring schedules representable by a single standard cron expression are supported. Return {"error":"unsupported"} for one-time dates, every other week, last/nth weekday, holidays, seconds, random times, explicit timezones, interval steps that do not divide the hour/day, or other unsupported constraints. Never silently discard a constraint. Times are interpreted in the caller's chosen timezone. Return JSON only, no commands or explanations.
+
+Input: Every weekday at 9:30am
+Output: {"cron":"30 9 * * 1-5"}
+
+Input: On the 1st and 15th of every month at noon
+Output: {"cron":"0 12 1,15 * *"}
+
+Input: Every other Friday at 4pm
+Output: {"error":"unsupported"}

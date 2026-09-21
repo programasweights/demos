@@ -1,0 +1,6 @@
+-r ../requirements.txt
+torch>=2.6,<3
+transformers==4.57.3
+peft==0.18.0
+safetensors==0.7.0
+playwright==1.58.0
