@@ -113,5 +113,3 @@ NeurIPS 2026 · [Preprint](https://arxiv.org/abs/2607.02512)
 ## Credits
 
 Inspired by [Shu's small-model roundup](https://x.com/shuding/status/2100131151709171944): [gpu-time](https://github.com/arikchakma/gpu-time), [gpu-lexer](https://github.com/vercel-labs/gpu-lexer), [neural-flexbox](https://github.com/aaronvanston/neural-flexbox), [TinySarf](https://github.com/AhmedAbdel-Aal/tinySarf), [gpu-query](https://github.com/safzanpirani/gpu-query), and [gpu-cron](https://github.com/manuschillerdev/gpu-cron).
-
-MIT license.
