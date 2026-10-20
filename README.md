@@ -78,6 +78,38 @@ Requires Python 3.10+. Examples use hosted inference by default; add `--local` t
 
 [PII detection](https://github.com/programasweights/pii) · [Claudish translation](https://github.com/programasweights/claudish) · [Avatar Director](https://github.com/programasweights/avatar)
 
+## Citation
+
+If you use these demos in research, cite Program-as-Weights for the programming paradigm and Compile by Training for the training compiler used in the examples.
+
+**[Program-as-Weights: A Programming Paradigm for Fuzzy Functions](https://arxiv.org/abs/2607.02512)**
+
+```bibtex
+@misc{paw_2607_02512,
+  title = {{Program-as-Weights: A Programming Paradigm for Fuzzy Functions}},
+  author = {Zhang, Wentao and Hotsko, Liliana and Kim, Woojeong and Nie, Pengyu and Shieber, Stuart and Deng, Yuntian},
+  year = {2026},
+  note = {arXiv preprint},
+  eprint = {2607.02512},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2607.02512}
+}
+```
+
+**[Compile by Training: Turning Natural-Language Specifications into Local Neural Functions](https://arxiv.org/abs/2609.04199)**
+
+```bibtex
+@misc{paw_2609_04199,
+  title = {{Compile by Training: Turning Natural-Language Specifications into Local Neural Functions}},
+  author = {Deng, Yuntian and Nie, Pengyu and Shieber, Stuart},
+  year = {2026},
+  note = {arXiv preprint},
+  eprint = {2609.04199},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2609.04199}
+}
+```
+
 ## Credits
 
 Inspired by [Shu's small-model roundup](https://x.com/shuding/status/2100131151709171944): [gpu-time](https://github.com/arikchakma/gpu-time), [gpu-lexer](https://github.com/vercel-labs/gpu-lexer), [neural-flexbox](https://github.com/aaronvanston/neural-flexbox), [TinySarf](https://github.com/AhmedAbdel-Aal/tinySarf), [gpu-query](https://github.com/safzanpirani/gpu-query), and [gpu-cron](https://github.com/manuschillerdev/gpu-cron).
