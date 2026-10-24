@@ -82,7 +82,7 @@ Requires Python 3.10+. Examples use hosted inference by default; add `--local` t
 
 If you use these demos in research, cite Program-as-Weights for the programming paradigm and Compile by Training for the training compiler used in the examples.
 
-**[Program-as-Weights: A Programming Paradigm for Fuzzy Functions](https://openreview.net/forum?id=ppCD0mb6ty)**
+**[Program-as-Weights: A Programming Paradigm for Fuzzy Functions](https://arxiv.org/abs/2607.02512)**
 
 NeurIPS 2026 · [Preprint](https://arxiv.org/abs/2607.02512)
 
@@ -92,7 +92,7 @@ NeurIPS 2026 · [Preprint](https://arxiv.org/abs/2607.02512)
   author = {Zhang, Wentao and Hotsko, Liliana and Kim, Woojeong and Nie, Pengyu and Shieber, Stuart and Deng, Yuntian},
   booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems},
   year = {2026},
-  url = {https://openreview.net/forum?id=ppCD0mb6ty}
+  url = {https://arxiv.org/abs/2607.02512}
 }
 ```
 
